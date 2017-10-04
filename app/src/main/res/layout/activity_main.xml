@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.android.acadgild.filesaveasynctask161.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:id="@+id/addTextReg"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAddText"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape"
+            android:textSize="35sp"            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddText"
+            android:textStyle="bold"
+            android:text="ADD TEXT"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvContentFromFile"
+        android:layout_below="@id/addTextReg"
+        android:text="Content From File"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvShowFromFile"
+        android:layout_below="@id/tvContentFromFile"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelFile"
+        android:textStyle="bold"
+        android:layout_below="@id/tvShowFromFile"
+        android:text="DELETE File"
+        />
+</RelativeLayout>
